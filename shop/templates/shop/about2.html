@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>About Us</title>
+  </head>
+  <body>
+    {% load static %}
+    {% for prod in product %}
+      <h1>{{ prod.product_id}}</h1>
+            <h1>{{ prod.product_name}}</h1>
+            <h1>{{ prod.category}}</h1>
+          <h1>{{ prod.subcategory}}</h1>
+                <h1>{{ prod.price}}</h1>
+                      <h1>{{ prod.desc}}</h1>
+                            <h1>{{ prod.pub_date}}</h1>
+    {% endfor %}
+  </body>
+</html>
